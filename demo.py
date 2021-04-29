@@ -1,4 +1,4 @@
-from math10 import *
+from permu import *
 
 
 factorial = factorial(10, coma=True)
@@ -13,7 +13,18 @@ permutation_with_repetition = permutationword("Tallahassee", coma=True)
 
 print("nPr = ", permutation_with_repetition)
 
-permutation_with_repetition_int = permutationint(11, 3, 2, 2, 2, coma=True)
+number = input("N: ").split()
+
+list1 = []
+
+for i in number:
+    list1.append(int(i))
+
+# In order to apply the function to a list of arguments, we use a * inside the argument list:
+
+# para itake ng parameter yung list of integers need mo maglagay ng * sa argument
+
+permutation_with_repetition_int = permutationint(11, *list1, coma=True)
 
 print("nPr = ", permutation_with_repetition_int )
 
