@@ -1,4 +1,5 @@
-from permu import *
+from math10 import *
+
 
 factorial = factorial(10, coma=True)
 
@@ -8,9 +9,13 @@ combination = combination(10, 3, coma=True)
 
 print("nCr = ", combination)
 
-permutation_with_repetition = permutationw("Tallahassee", coma=True)
+permutation_with_repetition = permutationword("Tallahassee", coma=True)
 
-print("nPr = ",permutation_with_repetition)
+print("nPr = ", permutation_with_repetition)
+
+permutation_with_repetition_int = permutationint(11, 3, 2, 2, 2, coma=True)
+
+print("nPr = ", permutation_with_repetition_int )
 
 print("\n False Comma\n") #coma default value is false
 
